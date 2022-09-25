@@ -1,0 +1,155 @@
+body, html {
+    margin: 0 auto;
+    max-width: 2000px;
+    min-width: 1000px;
+}
+.navWrapper {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+}
+.nav {
+    transition: ease 1s;
+    width: 100%;
+    box-shadow: black 0px 0px 10px;
+    border-top: solid black 1px;
+    background: linear-gradient(to right, #0066ff8a, #18ffff52, #0066ff8a);
+}
+.nav:hover {
+    transition: ease 1s;
+    box-shadow: black 0px 0px 20px;
+}
+.navLinks {
+    background: -webkit-linear-gradient(#000, #781515);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    cursor: pointer;
+}
+.main {
+    margin-top: 100px;
+    margin-left: 20%;
+    font-size: 50px;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#3caab5, #001534);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: -webkit-center;
+    float: left;
+}
+.seperator {
+    background: dodgerblue;
+    width: 250px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+.mainImage {
+    margin-top: 100px;
+    margin-right: 20%;
+    float: right;
+    width: 250px;
+    image-rendering: pixelated;
+    margin-left: 62px;
+    cursor: pointer;
+}
+.box1 {
+    border-radius: 10px;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/coffee.jpg);
+    border: solid 1px;
+    width: 50%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-align: -webkit-center;
+    transition: ease 1s;
+    margin-right: 5px;
+}
+.box1:hover, .box2:hover {
+    transition: ease 1s;
+    transform: translate(0px, -5px);
+    cursor: pointer;
+    box-shadow: black 0px 0px 10px 3px;
+}
+.box2 {
+    border-radius: 10px;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/mine.png);
+    border: solid 1px;
+    width: 50%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-align: -webkit-center;
+    transition: ease 1s;
+    margin-left: 5px;
+}
+.boxText {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: -webkit-linear-gradient(#0000007a, #000000eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.p1 {
+    margin-bottom: 500px;
+}
+.seperator2 {
+    text-align: -webkit-center;
+}
+.seperator3 {
+    transition: ease 1s;
+    background: gray;
+    width: 250px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: -30px;
+    box-shadow: black 0px 2px 10px;
+}
+.seperator3:hover {
+    transition: ease 1s;
+    transform: scaleX(1.5)translate(0px, -3px);
+}
+.pp3 {
+    text-align: -webkit-center;
+}
+.mailInputs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, #454545, #555555, #454545);
+    border-radius: 10px;
+    color: white;
+    border: solid 3px gray;
+    box-shadow: black 0px 0px 5px;
+    transition: ease 1s;
+}
+.mailInputs:hover {
+    box-shadow: black 0px 0px 10px;
+    transform: translate(0px, -5px);
+    transition: ease 1s;
+}
+.mailButton {
+    transition: ease 1s;
+    background: linear-gradient(to bottom, #18bdc3, #1e90ff, #18bdc3);
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+}
+.mailButton:hover {
+    transition: ease 1s;
+    transform: scale(1.05);
+}
