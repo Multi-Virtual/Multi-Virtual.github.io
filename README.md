@@ -20,3 +20,10 @@ The official Multi-Virtual website.
 </body>
 </html>
 ```
+
+## We are also searching for Javascript developers
+```Javascript
+let title = "Multi-Virtual";
+document.title = title;
+console.log(title);
+```
