@@ -71,9 +71,9 @@ on join:
 ```
 
 ## Also Node JS
-```Bash
+```Powershell
 npm install
 ```
-```Bash
+```Powershell
 node server.js
 ```
