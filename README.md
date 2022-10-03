@@ -54,3 +54,12 @@ body {
     margin: 10px;
 }
 ```
+
+## Also Json
+```Json
+{
+    "Default": {
+        "Title": "Multi-Virtual"
+    }
+}
+```
