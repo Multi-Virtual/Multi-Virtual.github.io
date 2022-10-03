@@ -63,3 +63,9 @@ body {
     }
 }
 ```
+
+## ALso Skript
+```Skript
+on join:
+    set {JoinMessage} to "Welcome!"
+```
