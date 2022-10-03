@@ -44,3 +44,13 @@ console.log(title);
 </body>
 </html>
 ```
+
+## Also Css
+```Css
+body {
+    background-color: blue;
+}
+.button {
+    margin: 10px;
+}
+```
