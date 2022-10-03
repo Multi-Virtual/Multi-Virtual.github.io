@@ -71,9 +71,9 @@ on join:
 ```
 
 ## Also Node JS
-```Console
+```Node
 npm install
 ```
-```Console
+```Node
 node server.js
 ```
