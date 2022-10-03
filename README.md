@@ -69,3 +69,11 @@ body {
 on join:
     set {JoinMessage} to "Welcome!"
 ```
+
+## Also Node JS
+```Bash
+npm install
+```
+```Bash
+node server.js
+```
