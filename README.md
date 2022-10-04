@@ -1,6 +1,6 @@
 > # Multi-Virtual
-***The official Multi-Virtual website.***
-`Multi-Virtual is a company made by Sparky2you and Coolboy67YT and this is the website.`
+*The official Multi-Virtual website.*
+*Multi-Virtual is a company made by Sparky2you and Coolboy67YT and this is the website.*
 
 > ## If you need help coding or want to be developer
 ```HTML
