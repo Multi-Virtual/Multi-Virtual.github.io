@@ -66,6 +66,7 @@ body {
 ```Skript
 on join:
     set {JoinMessage} to "Welcome!"
+    sens {JoinMessage} to all players
 ```
 
 > ## Also Node JS
