@@ -1,0 +1,40 @@
+const options = `
+{
+
+    "Default": {
+        "Name": "Multi-Virtual",
+        "MiniTitle": "Company",
+        "MaxWidth": "2000px",
+        "MinWidth": "1000px"
+    },
+
+    "Nav": {
+        "ButtonHome": "Home",
+        "ButtonStore": "Store",
+        "ButtonProjects": "Projects",
+        "Link1": "#",
+        "Link2": "https://multi-virtual.tebex.io"
+    },
+
+    "Box": {
+        "Link1": "https://discord.gg/mgEz4y5Sb5",
+        "Link2": "https://sunylexmc.github.io/",
+        "Link3": "https://discord.gg/WZuTT4erDf",
+        "Link4": "https://multi-virtual.tebex.io",
+        "Text1": "Join a chilling Discord server.",
+        "Text2": "Play a futuristic Minecraft server.",
+        "Text3": "Join the official Discord server.",
+        "Text4": "Play a new Survival Role Play Minecraft server.",
+        "Text5": "Check the official store of Multi-Virtual.",
+        "Desc1": "Join The Chillout Hut's Discord server to chillout, relax and take it smooth.",
+        "Desc2": "Join Sunylex a Minecaft server with all kinds of games factions, survival and 9 others.",
+        "Desc3": "Join the Multi-Virtual HUB Discord that is the official Discord where all the community is.",
+        "Desc4": "Join a roleplay Minecraft server where you will make you life in survival and with an economy.",
+        "Desc5": "The official store of Multi-Virtual. Here you will find all related stores like Sunylex, RolePlayYou and other things to buy.",
+        "Lock": false
+
+    }
+
+}
+`;
+localStorage.setItem("session", options);
