@@ -94,7 +94,7 @@ document.getElementById(idP2).innerHTML = `
                     <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/multi.png" alt="">
                     <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc5+`</p>
                 </div>
-                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/RolePlayYou.png);background-repeat: no-repeat;background-size: cover;margin-left: 12px;" onclick="linkBox5()" class="box2">
+                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/bg.png);background-repeat: no-repeat;background-size: cover;margin-left: 12px;" onclick="linkBox5()" class="box2">
                     <div class="boxPopup">
                         <p class="boxText">Start coding CSS with our language.</p>
                     </div>
