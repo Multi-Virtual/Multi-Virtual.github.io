@@ -1,241 +1,154 @@
-// JSON CONNECTION
-const options2 = JSON.parse(localStorage.getItem("session"));
-// JSON CONNECTION END
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-// VARIABLES
-mainName = options2.Default.Name;
-title = options2.Default.Name;
-navButton1 = options2.Nav.ButtonHome;
-navButton2 = options2.Nav.ButtonStore;
-navButton3 = options2.Nav.ButtonProjects;
-idP1 = "p1";
-idP2 = "p2";// Class needs to be the same
-lock = options2.Box.Lock;
-// VARIABLES END
+    <!-- HEAD -->
+    <script src="config.json"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./file/multi.png">
+    <title>Document</title>
+    <!-- HEAD END -->
 
-// HTML
-document.getElementById(idP1).innerHTML = `
-<div>
-    <nav class="nav">
-        <ul id="navInject" class="navWrapper">
-            <li><a class="navLinks" href="`+options2.Nav.Link1+`">`+navButton1+`</a></li>
-            <li><a class="navLinks" href="`+options2.Nav.Link2+`">`+navButton2+`</a></li>
-            <li><a class="navLinks" onclick="projects()">`+navButton3+`</a></li>
-            <!--<div id="injector">
-                <li><a onclick="settings()"><img id="settingsButton" style="width: 25px;border: solid 1px;border-radius: 10px;background: black;" src="./file/settings.png"></a></li>
-            </div>-->
-        </ul>
-    </nav>
-</div>
-<div style="background: linear-gradient(to bottom, #00000021, transparent);height: 400px;width: 50%;float: left;border-radius: 10px 0px;">
-    <div class="main">
-        <div style="margin-bottom: 30px;">
-            <ruby>
-                `+mainName+`<rt>`+options2.Default.MiniTitle+`</rt>
-            </ruby>
+</head>
+
+<!-- MAIN BODY -->
+<body style="margin: 0;background: linear-gradient(to bottom, #c7c7c7, transparent);font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;">
+    
+    <!-- SECTION 1 -->
+    <section id="p1" class="p1">
+    </section>
+    <!-- SECTION 1 END -->
+
+    <!-- SEPERATOR -->
+    <section style="margin-bottom: -350px;">
+        <div style="text-align: center;font-size: 20px;">
+            <p>Multi-Virtual is a big professional coding company made by Sparky2you and owned by Sparky2you, Coolboy67YT and Den7Creeper.</p>
+            <p>Here you can find Minecraft servers, Discord servers, coding languages and much more!</p>
         </div>
-        <div class="seperator"></div>
+    </section>
+    <div>
+        <div style="margin-bottom: 600px;"></div>
     </div>
-</div>
-<img onclick="logoClick()" class="mainImage" src="./file/multi.png" alt="Logo">
-    `;
-if (lock === true) {
-    lock2 = "<!--";
-    lock3 = "-->";
-} else {
-    lock2 = "";
-    lock3 = "";
-}
-document.getElementById(idP2).innerHTML = `
-`+lock2+`
-<div style="margin-top: 100px;margin-left: 10px;margin-right: 10px;">
-            <div style="display: flex;margin-bottom: 10px;margin-top: 150px;">
-                <div onclick="linkBox1()" class="box1">
-                    <div class="boxPopup">
-                        <p class="boxText">`+options2.Box.Text1+`</p>
+    <!-- SEPERATOR END -->
+
+    <!-- SECTION 2 -->
+    <section id="p2" class="p2">
+    </section>
+    <!-- SECTION 2 END -->
+
+    <!-- SECTION 3 -->
+    <section>
+
+        <div class="shape"></div>
+
+        <!-- CONTACT -->
+        <div class="pp3" style="margin-top: 100px;">
+        <!-- CONTACT END -->
+
+            <!-- SEPERATOR -->
+            <!-- SEPERATOR END -->
+
+            <!-- CONTACT BOX SHADOW -->
+            <div style="background-color: #f8f8f8;border-radius: 6px;box-shadow: 0 3px 6px #009688;display: flex;flex-direction: column;width: 295px;margin-top: 100px;height: 220px;margin-bottom: 500px;">
+
+            <!-- CONTACT BOX SHADOW END -->
+
+                <!-- CONTACT TEXT -->
+                <p style="font-size: 25px;">Contact</p>
+                <!-- CONTACT TEXT END -->
+
+                    <!-- CONTACT CLEANER -->
+                    <div>
+
+                        <!-- CONTACT MAIL STRING CLEANER -->
+                        <div>
+
+                            <!-- CONTACT MAIL STRING -->
+                            <input class="mailInputs" type="text" name="" value="Object" id="sub">
+                            <!-- CONTACT MAIL STRING END -->
+
+                        </div>
+                        <!-- CONTACT MAIL STRING CLEANER END -->
+
+                        <button class="mailButton" onclick="mail()">Next</button>
                     </div>
-                    <p class="boxTextTitle">The Chillout Hut</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/logochill.png" alt="">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc1+`</p>
-                </div>
-                <div onclick="linkBox2()" class="box2">
-                    <div class="boxPopup">
-                        <p class="boxText">`+options2.Box.Text2+`</p>
+                    <!-- CONTACT CLEANER END -->
+
+                <!-- SEPERATOR -->
+                <div id="sep1" style="width: 500px;margin-top: 100px;background: cadetblue;" class="seperator3"></div>
+                <!-- SEPERATOR END -->
+
+                <!-- STAFF -->
+                <div style="background-color: #f8f8f8;border-radius: 6px;box-shadow: 0 3px 6px #009688;display: flex;flex-direction: column;width: 295px;height: 500px;align-items: center;">
+                    
+                    <!-- STAFF TITLE -->
+                    <p style="font-size: 25px;">Staff</p>
+                    <!-- STAFF TITLE END -->
+
+                    <!-- STAFF LIST -->
+                    <div class="BoxStaff">
+                        <p style="font-weight: bold;">Owners,</p>
+                        <p>Sparky2you</p>
+                        <p>Coolboy67YT</p>
+                        <p>Den7Creeper</p>
+                        <div style="width: 50%;margin-top: 10px;height: 3px;" class="seperator"></div>
+                        <p style="font-weight: bold;">Administrator,</p>
+                        <p>KizaruKun</p>
+                        <div style="width: 50%;margin-top: 10px;height: 3px;" class="seperator"></div>
+                        <p style="font-weight: bold;">Devlopers,</p>
+                        <p>CykaMan</p>
+                        <p>LunarFlame</p>
+                        <p>Mordrowned</p>
                     </div>
-                    <p class="boxTextTitle">Sunylex</p>
-                   <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/sunylogo.png" alt="">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc2+`</p>
+                    <!-- STAFF LIST END -->
+
                 </div>
             </div>
-            <div style="display: flex;margin-top: 10px;">
-                <div style="margin-top: 90px;margin-left: 0;margin-right: 5px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/Disc2.png);background-repeat: no-repeat;background-size: cover;" onclick="linkBox3()" class="box2">
-                    <div class="boxPopup">
-                        <p class="boxText">`+options2.Box.Text3+`</p>
+            <!--<div class="log-in">
+                <p style="margin-top: 100px;">Log-in (Minecraft In-Game username)</p>
+                <input maxlength="16" class="input" type="text" name="" id="testValue">
+                <button class="button" onclick="testValueSubmit()">Log-in</button>
+                <div id="eui"></div>
+            </div>-->
+            <!-- STAFF END -->
+
+            <!-- CONTACT -->
+        <div class="pp3" style="margin-top: 530px;">
+            <!-- CONTACT END -->
+    
+                <!-- SEPERATOR -->
+                <!-- SEPERATOR END -->
+    
+                <!-- CONTACT BOX SHADOW -->
+                <div style="background-color: #f8f8f8;border-radius: 6px;box-shadow: 0 3px 6px #009688;display: flex;flex-direction: column;width: 295px;margin-top: 250px;height: 220px;margin-bottom: 100px;">
+    
+                    <div style="margin-top: -15%;" class="log-in">
+                        <p style="margin-top: 100px;">Log-in (Minecraft In-Game username)</p>
+                        <input maxlength="16" class="input" type="text" name="" id="testValue">
+                        <button class="button" onclick="testValueSubmit()">Log-in</button>
+                        <div id="eui"></div>
                     </div>
-                    <p class="boxTextTitle">Multi-Virtual's Discord</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/Disc.png" alt="">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc3+`</p>
-                </div>
-                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/RolePlayYou.png);background-repeat: no-repeat;background-size: cover;margin-left: 5px;margin-right: -1px;" onclick="javascript:alert('Ip: RolePlayYou.minehut.gg');" class="box2">
-                    <div class="boxPopup">
-                        <p class="boxText">`+options2.Box.Text4+`</p>
-                    </div>
-                    <p class="boxTextTitle">RolePlayYou</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/rpy.png" alt="RolePlayYouLogo">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc4+`</p>
-                </div>
-            </div>
-            <div style="display: flex;margin-top: 10px;">
-                <div style="margin-right: 5px;margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/store.png);background-repeat: no-repeat;background-size: cover;margin-left: -0.5px;" onclick="linkBox4()" class="box2">
-                    <div class="boxPopup">
-                        <p class="boxText">`+options2.Box.Text5+`</p>
-                    </div>
-                    <p class="boxTextTitle">Store</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/multi.png" alt="">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc5+`</p>
-                </div>
-                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/bubble.png);background-repeat: no-repeat;background-size: cover;margin-left: 5px;margin-right: -1px;" onclick="linkBox5()" class="box2">
-                    <div class="boxPopup">
-                        <p class="boxText">The official and original BubbleJS.</p>
-                    </div>
-                    <p class="boxTextTitle">BubbleJS</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/Bubble.js.png" alt="RolePlayYouLogo">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">BubbleJS is a extremely flexible coding language that is new and that follows what the community wants!</p>
-                </div>
-            </div>
-        </div>`+lock3+`
-`;
-// HTML END
 
-// CODE
-document.title = title;
-document.querySelector(':root').style = ('--MaxWidth', options2.Default.MaxWidth);
-document.querySelector(':root').style = ('--MinWidth', options2.Default.MinWidth);
-function linkBox1() {
-    location.href = options2.Box.Link1;
-}
-function linkBox2() {
-    location.href = options2.Box.Link2;
-}
-function linkBox3() {
-    location.href = options2.Box.Link3;
-}
-function linkBox4() {
-    location.href = options2.Box.Link4;
-}
-function linkBox5() {
-    location.href = 'https://github.com/BubbleJSCode/BubbleJS';
-}
-function projects() {
-    var element = document.querySelector("."+idP2);
-    element.scrollIntoView({ behavior: 'smooth' });
-}
-function logoClick() {
-    location.reload();
-}
-var mousePosition;
-var offset = [0,0];
-var div;
-var isDown = false;
+    </section>
+    <!-- SECTION 3 END -->
 
-div = document.createElement("div");
-div.style.position = "absolute";
-div.style.right = "0px";
-div.style.top = "50px";
-div.style.width = "100px";
-div.style.height = "100px";
-div.style.background = "url(./file/multi.png) no-repeat";
-div.style.cursor = "grab";
-div.onmousedown = function() {grabbing()};
-div.onmouseup = function() {grab()};
-//function grabbing() {
-//    div.style.cursor = "grabbing";
-//}
-//function grab() {
-//    div.style.cursor = "grab";
-//}
-//
-//document.body.appendChild(div);
-//
-//div.addEventListener('mousedown', function(e) {
-//    isDown = true;
-//    offset = [
-//        div.offsetLeft - e.clientX,
-//        div.offsetTop - e.clientY
-//    ];
-//}, true);
-//
-//document.addEventListener('mouseup', function() {
-//    isDown = false;
-//}, true);
-//
-//document.addEventListener('mousemove', function(event) {
-//    event.preventDefault();
-//    if (isDown) {
-//        mousePosition = {
-//
-//             x : event.clientX,
-//             y : event.clientY
-// 
-//         };
-//         div.style.left = (mousePosition.x + offset[0]) + 'px';
-//         div.style.top  = (mousePosition.y + offset[1]) + 'px';
-//     }
-// }, true);
-// div.onmousedown = function() {learnMore()};
-//function learnMore() {
-//    div.innerHTML = "<div style='box-shadow: black 0px 0px 10px;border: solid 1px;background: linear-gradient(to bottom, #c7c7c7, #cdc9c9);border-radius: 10px;margin-top: -10px;'><p style='text-align: center;background: linear-gradient(to bottom, #1b00ff, #10759d);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;'>Multi-Virtual is a company made by Sparky2you and Coolboy67YT</p></div>";
-//}
-//function removePopup() {
-//    div.remove();
-//}
-//function settings() {
-//    document.getElementById("injector").innerHTML = "<button onclick='removePopup()'>Remove window</button>";
-//}
-function saveTest() {
-    localStorage.setItem('saveTest', 'Test');
-}
-//function saveTest2() {
-//    var savedTest = localStorage.getItem('saveTest');
-//    alert(savedTest);
-//}
-function mail() {
-    var subValue = document.getElementById('sub').value;
-    if (subValue !== "") {
-        location.href = 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=Multi.Virtual.Companie@gmail.com&su='+subValue+'&body=','Message';
-    } else {
-        alert("Please insert something.");
-    }
-}
-function testValueSubmit() {
-    let testValue2 = document.getElementById("testValue").value;
-    let test = localStorage.setItem("test2", testValue2);
-    let test3 = localStorage.getItem("test2");
-    let username = test3;
-    if (username !== "") {
-        document.getElementById('eui').innerHTML = "<img src='https://mc-heads.net/combo/"+username+"'>";
-        document.getElementById('eui').innerHTML = "<p>Succesfully logged-in as:<span style='font-weight: bold;'> "+username+"</span>  <img style='margin-bottom: -5px;' width='25px' src='https://mc-heads.net/avatar/"+username+"'></p>";
-        log();
-    } else {
-        document.getElementById('eui').innerHTML = "<p style='color: red;'>Please insert something!</p>";
-    }
-}
-function testing() {
-    location.href = "http://localhost:8080/";
-}
-async function asyncReadFile(filename) {
-  try {
-    const contents = await fsPromises.readFile(filename, 'utf-8');
+    <section>
+        <div style="margin-left: 25px;background: -webkit-linear-gradient(#0071f8, #001534);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+            <p>© 2022 Multi-Virtual. All Rights Reserved.</p>
+        </div>
+    </section>
 
-    const arr = contents.split(/\r?\n/);
+    <!-- CONNECTION (needs to be listed in importance) -->
+    <script src="index.js"></script>
+    <script src="snowstorm.js"></script>
+    <script src="https://cdn.rawgit.com/scottschiller/Snowstorm/master/snowstorm-min.js"></script>
+    <!-- CONNECTION END -->
 
-    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+    <!--npx tsc-->
 
-    return arr;
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-asyncReadFile('./config.json');
-// CODE END
+<!-- MAIN BODY END -->
+</body>
+</html>
