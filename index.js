@@ -13,24 +13,6 @@ idP2 = "p2";// Class needs to be the same
 lock = options2.Box.Lock;
 // VARIABLES END
 
-function log() {
-    let testidk = localStorage.getItem("test2");
-    fetch('https://mc-heads.net/minecraft/profile/'+testidk)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        let logs = (testidk);
-        var profile = ('{' + '"Profile": {' + '"Username": ' + '"' + logs + '"' + ',' + '"Uuid": ' + '"' + data.id + '"' + '}' + '}');
-        localStorage.setItem('profile', data);
-        var player = data;
-        var link = 'https://mc-heads.net/combo/' + testidk;
-        var get = document.getElementById('loggedimg');
-        get.innerHTML += '<img src='+link+' alt="idk" style="margin-top:10px">';
-        console.log(player.name);
-        // var profile1 = localStorage.getItem('profile')
-    })
-}
 // HTML
 document.getElementById(idP1).innerHTML = `
 <div>
@@ -53,7 +35,6 @@ document.getElementById(idP1).innerHTML = `
             </ruby>
         </div>
         <div class="seperator"></div>
-        <div id='loggedimg'></div>
     </div>
 </div>
 <img onclick="logoClick()" class="mainImage" src="./file/multi.png" alt="Logo">
@@ -105,7 +86,7 @@ document.getElementById(idP2).innerHTML = `
                 </div>
             </div>
             <div style="display: flex;margin-top: 10px;">
-                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/store.png);background-repeat: no-repeat;background-size: cover;margin-left: -0.5px;" onclick="linkBox4()" class="box2">
+                <div style="margin-right: 5px;margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/store.png);background-repeat: no-repeat;background-size: cover;margin-left: -0.5px;" onclick="linkBox4()" class="box2">
                     <div class="boxPopup">
                         <p class="boxText">`+options2.Box.Text5+`</p>
                     </div>
@@ -113,13 +94,13 @@ document.getElementById(idP2).innerHTML = `
                     <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/multi.png" alt="">
                     <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">`+options2.Box.Desc5+`</p>
                 </div>
-                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/bg.png);background-repeat: no-repeat;background-size: cover;margin-left: 12px;" onclick="linkBox5()" class="box2">
+                <div style="margin-top: 90px;background: linear-gradient( rgb(193 183 183), rgba(0,0,0,.5) ), url(./file/bubble.png);background-repeat: no-repeat;background-size: cover;margin-left: 5px;margin-right: -1px;" onclick="linkBox5()" class="box2">
                     <div class="boxPopup">
-                        <p class="boxText">Start coding CSS with our language.</p>
+                        <p class="boxText">The official and original BubbleJS.</p>
                     </div>
-                    <p class="boxTextTitle">SPSS</p>
-                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/spss.gif" alt="RolePlayYouLogo">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">Start coding SPSS that will after generate you CSS!</p>
+                    <p class="boxTextTitle">BubbleJS</p>
+                    <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/Bubble.js.png" alt="RolePlayYouLogo">
+                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">BubbleJS is a extremely flexible coding language that is new and that follows what is community wants!</p>
                 </div>
             </div>
         </div>`+lock3+`
@@ -143,7 +124,7 @@ function linkBox4() {
     location.href = options2.Box.Link4;
 }
 function linkBox5() {
-    location.href = 'https://www.dropbox.com/s/a97a7cmw6smasfj/SPSS%20%287%29.zip?dl=1';
+    location.href = 'https://github.com/BubbleJSCode/BubbleJS';
 }
 function projects() {
     var element = document.querySelector("."+idP2);
@@ -167,9 +148,57 @@ div.style.background = "url(./file/multi.png) no-repeat";
 div.style.cursor = "grab";
 div.onmousedown = function() {grabbing()};
 div.onmouseup = function() {grab()};
+//function grabbing() {
+//    div.style.cursor = "grabbing";
+//}
+//function grab() {
+//    div.style.cursor = "grab";
+//}
+//
+//document.body.appendChild(div);
+//
+//div.addEventListener('mousedown', function(e) {
+//    isDown = true;
+//    offset = [
+//        div.offsetLeft - e.clientX,
+//        div.offsetTop - e.clientY
+//    ];
+//}, true);
+//
+//document.addEventListener('mouseup', function() {
+//    isDown = false;
+//}, true);
+//
+//document.addEventListener('mousemove', function(event) {
+//    event.preventDefault();
+//    if (isDown) {
+//        mousePosition = {
+//
+//             x : event.clientX,
+//             y : event.clientY
+// 
+//         };
+//         div.style.left = (mousePosition.x + offset[0]) + 'px';
+//         div.style.top  = (mousePosition.y + offset[1]) + 'px';
+//     }
+// }, true);
+// div.onmousedown = function() {learnMore()};
+//function learnMore() {
+//    div.innerHTML = "<div style='box-shadow: black 0px 0px 10px;border: solid 1px;background: linear-gradient(to bottom, #c7c7c7, #cdc9c9);border-radius: 10px;margin-top: -10px;'><p style='text-align: center;background: linear-gradient(to bottom, #1b00ff, #10759d);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;'>Multi-Virtual is a company made by Sparky2you and Coolboy67YT</p></div>";
+//}
+//function removePopup() {
+//    div.remove();
+//}
+//function settings() {
+//    document.getElementById("injector").innerHTML = "<button onclick='removePopup()'>Remove window</button>";
+//}
 function saveTest() {
     localStorage.setItem('saveTest', 'Test');
 }
+//function saveTest2() {
+//    var savedTest = localStorage.getItem('saveTest');
+//    alert(savedTest);
+//}
 function mail() {
     var subValue = document.getElementById('sub').value;
     if (subValue !== "") {
@@ -200,7 +229,7 @@ async function asyncReadFile(filename) {
 
     const arr = contents.split(/\r?\n/);
 
-    console.log(arr);
+    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
 
     return arr;
   } catch (err) {
