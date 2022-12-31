@@ -100,7 +100,7 @@ document.getElementById(idP2).innerHTML = `
                     </div>
                     <p class="boxTextTitle">BubbleJS</p>
                     <img style="width: 100px;border-bottom: solid;border-radius: 10px/50px;background: linear-gradient(to bottom, #ffffff7a, #0000003b);" src="./file/Bubble.js.png" alt="RolePlayYouLogo">
-                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">BubbleJS is a extremely flexible coding language that is new and that follows what is community wants!</p>
+                    <p class="boxText" style="border: none;font-weight: normal;background: -webkit-linear-gradient(var(--desccolor1), var(--desccolor2));-webkit-background-clip: text;-webkit-text-fill-color: transparent;">BubbleJS is a extremely flexible coding language that is new and that follows what the community wants!</p>
                 </div>
             </div>
         </div>`+lock3+`
